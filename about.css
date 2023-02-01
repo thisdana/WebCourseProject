@@ -1,0 +1,157 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Aboreto", cursive;
+
+  /* font-family: 'Exo 2', sans-serif; */
+
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* nav bar */
+nav {
+  background-color: white;
+  padding: 2%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+
+nav ul li {
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: gray;
+
+}
+
+nav ul .logo img {
+  width: 120px;
+  padding: 0;
+}
+
+/*------ about us ------*/
+aside {
+  padding: 6rem 2rem;
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  margin-top: 18rem;
+  color: white;
+  align-items: center;
+  text-align: center;
+  display: block;
+}
+.table {
+  margin-left: auto;
+  margin-right: auto;
+}
+.table a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.table i{
+  color:white;
+}
+.table a:hover {
+  color: grey;
+}
+.aalInside {
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("../img/hotel.jpg");
+  background-size: cover;
+}
+.articles {
+  padding: 3rem 0rem;
+  padding-left: 2rem;
+}
+
+.article_containor {
+  color: #ffffff;
+  position: relative;
+  margin-top: 65px;
+  width: 50%;
+  padding: 5em;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.article_containor h1 {
+  text-align: center;
+  position: relative;
+  font-size: 4rem;
+  color: white;
+}
+
+footer {
+  background-color: #f8f9fa;
+
+  text-align: center;
+  padding: 20px;
+}
+footer a, i {
+  color: black;
+  text-decoration: none;
+}
+
+footer a:hover,i:hover {
+  color: gray;
+}
+
+@media (max-width: 576px) {
+  .aalInside{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+  }
+  aside{
+    grid-area: 2/1/3/2;
+  }
+  .article_containor {
+    padding: 0px;
+  }
+}
+@media (min-width: 576px) and (max-width:768px) {
+  .aalInside{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+  }
+  aside{
+    grid-area: 2/1/3/2;
+  }
+  .article_containor {
+    padding: 0px;
+  }
+
+}
+@media (min-width:768px) and (max-width: 992px) {
+  .article_containor {
+    padding: 0;
+  }
+}

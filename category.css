@@ -1,0 +1,355 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Aboreto', cursive;
+
+    /* font-family: 'Exo 2', sans-serif; */
+
+
+    box-sizing: border-box;
+}
+
+/* scroll */
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(7, 0, 41);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+section {
+    height: 100vh;
+}
+
+/* nav bar */
+nav {
+    background-color: white;
+    padding: 2%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+
+nav ul li {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: gray;
+
+}
+
+nav ul .logo img {
+    width: 120px;
+    padding: 0;
+}
+
+/*design sections*/
+section .container {
+    padding: 25px;
+    margin: 40px auto;
+}
+section .container h3{
+    font-size: 30px;
+}
+section .container p{
+    font-size: 20px;
+}
+section .container .reserve {
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bolder;
+    border: 1px solid black;
+    background-color: white;
+    font-family: 'Aboreto', cursive;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+section .container .reserve:hover {
+    background-color: black;
+    color: white;
+
+}
+
+section .container .gallery {
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 5px;
+    justify-content: space-between;
+
+}
+
+section .container .gallery img {
+    overflow: hidden;
+    object-fit: contain;
+    width: 100%;
+
+}
+
+section .container .gallery img:hover {
+    transform: scale(90%);
+}
+
+section .container .gallery img:nth-child(1) {
+    grid-area: 1/1/3/3;
+
+}
+
+section .container .gallery img:nth-child(2) {
+    grid-area: 1/3/2/4;
+
+
+}
+
+section .container .gallery img:nth-child(3) {
+    grid-area: 1/4/2/5;
+
+
+}
+
+section .container .gallery img:nth-child(4) {
+    grid-area: 2/3/3/4;
+
+}
+
+section .container .gallery img:nth-child(5) {
+    grid-area: 2/4/3/5;
+
+}
+
+/*--- reservation---*/
+.book{
+    
+    background: linear-gradient(rgba(30, 29, 29, 0.3),#000007),url("https://cdn.boatinternational.com/files/2022/03/9cbb4710-a6c5-11ec-a24b-473d1b1cb1d8-ritz-carlton-yacht-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+   
+}
+.hero-bg{
+    color:white;
+    text-align: center;
+   
+   
+}
+
+.hero-bg p {
+    margin-bottom: 3em;
+  
+}
+.res{
+    padding: 20px;
+  
+    text-transform: uppercase;
+    text-transform: uppercase;
+    display: block;
+    font-size: 25px;
+    margin-top: 2em;
+    margin-bottom: .7em;
+  
+
+}
+.res-f{
+background-color: white;
+width: 350px;
+color: #000;
+height: 400px;
+text-align: center;
+padding-top: 1em;
+margin: auto;
+border-radius: 5px;
+padding-left: 2em;
+padding-right: 2em;
+margin-bottom: 3em;
+}
+form .form-item{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+
+}
+
+form .form-item .input-box{
+margin: 20px 0 12px 0 ;
+    width: calc(100% / 2 - 20px);
+}
+
+.form-item  input{
+    border-radius: 0px;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+    
+}
+.label1{
+    
+    font-weight: 500;
+    margin-bottom: 2px;
+    display: block;
+    font-size: 17px;
+    
+}
+
+.BTN{
+    font-size: 16px;
+    font-weight: bolder;
+    border: 1px solid black;
+    background-color: white;
+    font-family: 'Aboreto', cursive;
+    margin: 10px 0;
+    cursor: pointer;}
+.BTN:hover{
+    color: #fff;
+    background-color: #04080f;
+}
+
+footer {
+    background-color: #f8f9fa;
+    
+    text-align: center;
+    padding: 20px;
+  }
+  footer a, i {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover,i:hover {
+    color: gray;
+}
+
+/* 576px, 768px, and 992px */
+@media (min-width:768px) and (max-width: 992px) {
+    section .container .gallery {
+        grid-template-columns: 30% 30%;
+        justify-content: start;
+    }
+
+    section .container .gallery img:nth-child(1) {
+        grid-area: 1/1/2/2;
+    }
+
+    section .container .gallery img:nth-child(2) {
+        grid-area: 1/2/2/3;
+    }
+
+    section .container .gallery img:nth-child(3) {
+        grid-area: 1/3/2/4;
+        display: none;
+    }
+
+    section .container .gallery img:nth-child(4) {
+        grid-area: 2/1/3/2;
+    }
+
+    section .container .gallery img:nth-child(5) {
+        grid-area: 2/2/3/3;
+    }
+
+    section .container .gallery img {
+        overflow: hidden;
+        object-fit: contain;
+        width: 100%;
+
+    }
+}
+
+@media (min-width: 576px) and (max-width:768px) {
+    section .container .gallery {
+        grid-template-columns: 40% 40%;
+
+
+    }
+
+    section .container .gallery img:nth-child(1) {
+        grid-area: 1/1/2/2;
+
+
+    }
+
+    section .container .gallery img:nth-child(2) {
+
+        grid-area: 1/2/2/3;
+
+
+    }
+
+    section .container .gallery img:nth-child(3) {
+
+        grid-area: 1/3/2/4;
+        display: none;
+
+
+    }
+
+    section .container .gallery img:nth-child(4) {
+
+        grid-area: 2/1/3/2;
+
+    }
+
+    section .container .gallery img:nth-child(5) {
+        grid-area: 2/2/3/3;
+
+
+    }
+}
+
+@media (max-width: 576px) {
+    section .container .gallery {
+        grid-template-columns: 50% 50%;
+        justify-content: start;
+
+
+    }
+    section .container .gallery img:nth-child(1) {
+        grid-area: 1/1/2/2;
+    }
+
+    section .container .gallery img:nth-child(2) {
+        grid-area: 1/2/2/3;
+    }
+
+    section .container .gallery img:nth-child(3) {
+        grid-area: 1/3/2/4;
+        display: none;
+    }
+
+    section .container .gallery img:nth-child(4) {
+        grid-area: 2/1/3/2;
+    }
+    section .container .gallery img:nth-child(5) {
+        grid-area: 2/2/3/3;
+    }
+}
